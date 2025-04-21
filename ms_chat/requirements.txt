@@ -5,3 +5,4 @@ fastapi-mcp==0.2.0
 psycopg==3.2.6
 psycopg_binary==3.2.6
 fastapi==0.115.12
+streamlit==1.44.1
