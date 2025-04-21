@@ -11,12 +11,12 @@ mcp = FastApiMCP(
     app,
     name="POC mcp server",
     description="POC mcp server",
-    base_url="http://191.101.71.186:8000/mcp",
+    base_url="http://localhost:8000",
     describe_all_responses=True,
     describe_full_response_schema=True)
 
 # Mount the MCP server directly to your FastAPI app
-mcp.mount()
+mcp.mount(router=router)
 
 if __name__ == "__main__":
     import uvicorn

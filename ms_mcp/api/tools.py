@@ -2,9 +2,9 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-@router.get("/hello/{name}", operation_id="hello world")
-async def hello(name: str):
+@router.get("/", operation_id="sum two numbers")
+async def hello(a: int, b: int):
     """
-    A simple hello world endpoint.
+    sum two numbers.
     """
-    return {"message": f"Hello World, {name}!"}
+    return {"result": a + b}
