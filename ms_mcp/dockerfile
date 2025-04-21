@@ -1,0 +1,36 @@
+#Use ubuntu image
+FROM ubuntu:22.04
+
+#User official python
+from python:3.12-slim
+
+#Prevent interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+#Set Python environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+#Create simbolic link for python3 command
+RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN ln -s /usr/nin/pip3 /usr/bin/pip
+
+#SET WORKDIR
+WORKDIR /app_mcp
+
+#define python path
+ENV PYTHONPATH=*/app_mcp
+
+#install system dependencies
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+#Copy all files from current directory to /app
+COPY .env .
+COPY . .
+
+#Expose port 8000
+EXPOSE 8000
+
+#Run the application uvicorn
+CMD ["uvicorn", "mcp_server:app", "--host", "0.0.0.0", "--port", "8000"]

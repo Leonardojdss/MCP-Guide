@@ -1,3 +1,0 @@
-fastapi-mcp==0.2.0
-vicorn==0.34.1
-FastMCP==2.2.0

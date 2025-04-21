@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi_mcp import FastApiMCP
-from ms_mcp.api.tools import router
+from api.tools import router
 
 app = FastAPI()
 
