@@ -11,7 +11,7 @@ O propósito deste projeto é validar e testar o conceito de MCP (Model Context 
 ### 1. Clonar o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/Leonardojdss/MCP-Guide.git
 cd ms_mcp
 ```
 
@@ -19,12 +19,22 @@ cd ms_mcp
 
 Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
+#### Para uso local:
 ```
 DBHOST=localhost
 DBNAME=seu_banco
 DBUSER=seu_usuario
 DBPASSWORD=sua_senha
 SSLMODE=prefer
+```
+
+#### Para uso com Azure PostgreSQL:
+```
+DBHOST="nome_do_servidor.postgres.database.azure.com"
+DBNAME=seu_banco
+DBUSER=seu_usuario
+DBPASSWORD=sua_senha
+SSLMODE="require"
 ```
 
 ### 3. Instalar dependências

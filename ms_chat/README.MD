@@ -18,7 +18,7 @@ O objetivo deste projeto é testar e demonstrar o conceito de MCP (Model Context
 ### 1. Clonar o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/Leonardojdss/MCP-Guide.git
 cd MCP-Guide/ms_chat
 ```
 
