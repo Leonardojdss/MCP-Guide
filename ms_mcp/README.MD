@@ -4,7 +4,7 @@ Este projeto é uma Prova de Conceito (POC) para testar o conceito de MCP (Model
 
 ## Propósito
 
-O propósito deste projeto é validar e testar o conceito de MCP (Model Context Protocol), permitindo a criação, consulta, atualização e remoção de clientes via API RESTful, além de expor endpoints compatíveis com o protocolo MCP.
+O propósito deste projeto é validar e testar o conceito de MCP (Model Context Protocol), permitindo a criação, consulta, atualização e remoção de clientes via API, além de expor endpoints compatíveis com o protocolo MCP.
 
 ## Como iniciar
 
