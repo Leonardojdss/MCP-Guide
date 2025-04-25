@@ -67,7 +67,7 @@ Resumo:
 
 1. Inicie o servidor MCP.
 2. Inicie o chatbot.
-3. No chatbot, conecte-se ao endpoint do servidor MCP (ex: `http://localhost:8000`).
+3. No chatbot, conecte-se ao endpoint do servidor MCP (ex: `http://localhost:8000/mcp`).
 4. Interaja com o assistente, que poderá executar comandos CRUD em clientes via MCP.
 
 ## Dependências Principais
