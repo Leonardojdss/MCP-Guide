@@ -59,7 +59,7 @@ async def run(server_mpc_url: str):
 
 async def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 client_server_openai.py <server_url>")
+        print("Usage: python3 client_local_openai.py <server_url>")
         sys.exit(1)
 
     server_mpc_url = sys.argv[1]

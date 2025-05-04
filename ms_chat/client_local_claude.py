@@ -135,7 +135,7 @@ class MCPClient:
 
 async def main():
     if len(sys.argv) < 2:
-        print("Usage: python main.py <server_url>")
+        print("Usage: python client_local_claude.py <server_url>")
         sys.exit(1)
 
     client = MCPClient()
