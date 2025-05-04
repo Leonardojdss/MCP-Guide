@@ -72,11 +72,14 @@ docker run -d -p 8000:8000 --env-file .env mcp_server
 uvicorn mcp_server:app --host 0.0.0.0 --port 8000
 ```
 
-## Endpoints
+## Teste o MCP
 
-- CRUD de clientes: `/customers`
-- Integração MCP: endpoints expostos via FastAPI-MCP
+Acessar a documentação https://modelcontextprotocol.io/docs/tools/inspector
 
-Acesse a documentação interativa em: [http://localhost:8000/docs](http://localhost:8000/docs)
+Ou execute o seguinte comando para acessar o MCP inspector:
+
+```bash
+npx @modelcontextprotocol/inspector build/index.js
+````
 
 ---
