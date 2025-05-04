@@ -1,6 +1,6 @@
 import streamlit as st
 import asyncio
-from client_server import MCPClient
+from ms_chat.client_server_claude import MCPClient
 
 with st.sidebar:
     st.title("MCP Chatbot with Claude LLM")    
